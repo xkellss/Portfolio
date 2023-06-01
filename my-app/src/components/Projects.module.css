@@ -1,0 +1,18 @@
+.projectContainer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.projectGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.projectItem{
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    display: flex;
+}
