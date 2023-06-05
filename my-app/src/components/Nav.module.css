@@ -1,0 +1,16 @@
+.navHeader {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: rgb(31, 41, 55);
+}
+
+.navContainer{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.25rem;
+    flex-direction: row;
+    align-items: center;
+    
+}

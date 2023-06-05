@@ -37,8 +37,12 @@ const projects = [
 export const skills = [
     "JavaScript",
     "React",
-    "Next.js",
-    "Node",
-    "GraphQL",
-    "Material UI",
+    "HTML",
+    "CSS",
+    "MySQL",
+    "Java",
+    "C#",
+    "Networking",
+    "Database",
+    "Node.js",
 ];

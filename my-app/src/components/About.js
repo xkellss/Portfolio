@@ -13,7 +13,7 @@ function About(){
                 explore new skills/technologies. I'm ready to put in the work in order to grow and be the best I
                 can be!
             </p>
-                <img src={myImage} alt=""/>
+                <img className={classes.photo} src={myImage} alt=""/>
             </div>
             <div className={classes.linkContainer}>
         <a href="#contact" className={classes.link}>
