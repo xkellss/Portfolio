@@ -8,6 +8,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+
+}
+@media (max-width: 1468px) {
+    .projectGrid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .projectItem{
@@ -16,4 +22,16 @@
     width: 90%;
     text-align: center;
     display: flex;
+
+}
+.projectText{
+    font-size: 2rem;
+    font-family: "Roboto Thin", serif;
+}
+.projectLogo{
+    font-size: 3rem;
+    color: #7AD7F0;
+
+}
+.projectTitle {
 }

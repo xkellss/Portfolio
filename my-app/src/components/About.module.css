@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 .container {
     max-width: 100%;
     /*border: solid blue;*/
@@ -6,8 +8,9 @@
 
 .text {
     margin-bottom: 20px;
-    font-size: 3em;
+    font-size: 3.5em;
     padding-left: 5%;
+    font-family: 'Roboto', sans-serif;
 
 }
 .name{
@@ -20,7 +23,7 @@
     width: 400px;
     height: 400px;
 }
-@media (max-width: 768px) {
+@media (max-width: 968px) {
     .image img, img {
         width: 200px;
         height: 200px;
@@ -35,16 +38,26 @@
 }
 
 .summary {
+    font-size: 1.3rem;
     flex: 1;
     padding-left: 10%;
+    padding-right: 2%;
+}
+@media (max-width: 600px) {
+    .image {
+        padding-right: 2%;
+    }
 
+    .summary {
+        padding-left: 5%;
+        margin-left: 5%;
+    }
 }
 .linkContainer{
     text-align: center;
 }
 .link {
     display: inline-block;
-    margin-right: 10px;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 25px;

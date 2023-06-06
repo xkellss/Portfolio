@@ -1,11 +1,14 @@
 const projects = [
     {
-        title: "React Reserve",
-        subtitle: "MERN Stack",
+        title: "Ofer Mizrahi Diamonds",
+        subtitle: "HTML & CSS",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+            "This is my first website, created my first year of college for my final project. This project was based on a real diamond" +
+            "company where a friend of mine worked. It was an opportunity for me to showcase my design skills and see what vision" +
+            "I had. I'm proud of this project (although its not the best) as it represent my early growth and the progress" +
+            "I've made since then.",
         image: "./cat.gif",
-        link: "https://reactbootcamp.com",
+        link: "https://angry-jang-f51caa.netlify.app/index.html",
     },
     {
         title: "React Tracks",

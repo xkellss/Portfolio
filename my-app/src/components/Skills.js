@@ -1,12 +1,13 @@
 import React from "react";
 import {skills} from '../data.js';
 import classes from './Skills.module.css'
-
+import {BsCodeSlash} from 'react-icons/bs'
 
 function Skills(){
     return(
-        <div className={classes.skillsContainer}>
-        <h1>SKILLS</h1>
+        <div id="skills" className={classes.skillsContainer}>
+            <span className={classes.skillsLogo}><BsCodeSlash/></span>
+        <h1>SKILLS </h1>
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam fuga dolore.
             </p>
