@@ -2,7 +2,7 @@ import classes from './About.module.css'
 import myImage from './portfolio.jpg';
 function About(){
     return(
-        <div className={classes.container}>
+        <div id="about" className={classes.container}>
             <p className={classes.text}>
            Hello, I'm <span className={classes.name}>Kels!</span>
             </p>

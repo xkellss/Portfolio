@@ -3,6 +3,7 @@
     top: 0;
     z-index: 10;
     background-color: rgb(122,215,240);
+
 }
 
 .navContainer{
@@ -13,4 +14,49 @@
     flex-direction: row;
     align-items: center;
 
+
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+.name{
+    margin-left: .75rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-right: .30rem;
+    font-weight: bold;
+}
+.navBar{
+    margin-right: auto;
+    margin-left: 4px;
+    padding-top: 1px;
+    padding-left: 4px;
+    border-left: 1px solid #404040;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1rem;
+    justify-content: center;
+}
+
+.projects{
+    margin-right: 1rem;
+    margin-left: .60rem;
+}
+.skills{
+    margin-right: 1rem;
+
+}
+.contact{
+    font-weight: bold;
+}
+.arrow{
+    font-weight: bold;
+    color: black;
+    padding-top: .2%;
+}
+

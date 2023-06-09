@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 .skillsContainer{
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5%;
+    padding-bottom: 5%;
+
 }
 .skillsGrid{
     display: grid;
@@ -14,13 +17,30 @@
 }
 
 .skillsItem{
-    border: 1px solid #ccc;
+    /*border: 1px solid #ccc;*/
     padding: 20px;
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+
 }
 .skillsLogo{
     font-size: 3rem;
     color: #7AD7F0;
+}
+.skillsText{
+    font-family: "Roboto", serif;
+
+}
+.itemsCheck{
+    color: #7AD7F0;
+    font-size: 1.8rem;
+
+}
+.skillsItem:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.skillName{
+    margin-left: 15%;
+    font-size: 1.5rem;
 }

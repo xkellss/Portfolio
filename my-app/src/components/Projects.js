@@ -19,12 +19,19 @@ function Projects() {
                 <div className={classes.projectGrid} >
                     {projects.map((project) => (
                         <div className={classes.projectItem} key={project.title}>
-                            <img src={project.image} />
+                            <img className={classes.gif} src={project.image} />
                             <div>
+                                <div className={classes.projectSummary} >
                             <h1 className={classes.projectTitle}>{project.title}</h1>
 
                             <p>{project.description}</p>
+                                <span className={classes.projectLinks}>
+                            <a className={classes.github} href="">Github</a>
+                            <a href={project.link}>Website</a>
+                                </span>
+                                </div>
                             </div>
+
                         </div>
                     ))}
                 </div>

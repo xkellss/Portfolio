@@ -4,14 +4,14 @@ const projects = [
         subtitle: "HTML & CSS",
         description:
             "This is my first website, created my first year of college for my final project. This project was based on a real diamond" +
-            "company where a friend of mine worked. It was an opportunity for me to showcase my design skills and see what vision" +
-            "I had. I'm proud of this project (although its not the best) as it represent my early growth and the progress" +
-            "I've made since then.",
-        image: "./cat.gif",
+            " company where a friend of mine worked. It was an opportunity for me to showcase my design skills and see what vision" +
+            " I had. I'm proud of this project (although its not the best) as it represent my early growth and the progress" +
+            " I've made since then.",
+        image: "./diamond.gif",
         link: "https://angry-jang-f51caa.netlify.app/index.html",
     },
     {
-        title: "React Tracks",
+        title: "Aldi's PTO",
         subtitle: "React and Python",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
@@ -20,15 +20,15 @@ const projects = [
         link: "https://reactbootcamp.com",
     },
     {
-        title: "DevChat",
+        title: "Red-Hots Online Ordering",
         subtitle: "React and Firebase",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-        image: "./cat.gif",
+        image: "./hotdog.gif",
         link: "https://reactbootcamp.com",
     },
     {
-        title: "Epic Todo App",
+        title: "Database Project",
         subtitle: "React Hooks",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",

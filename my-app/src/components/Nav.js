@@ -1,18 +1,20 @@
 import React from 'react';
 import classes from './Nav.module.css'
+import {AiOutlineArrowRight} from 'react-icons/ai'
 
 function Nav(){
     return(
         <header className={classes.navHeader}>
             <div className={classes.navContainer}>
-                <a className={classes.navName}>
-                <a href="#about"> Raquel Gonzalez</a>
+                <a className={classes.name}>
+                <a href="#about" className={classes.name}> Raquel Gonzalez</a>
                 </a>
-                <nav>
-                    <a href="#projects"> Past Work</a>
-                    <a href="#skills"> Skills</a>
+                <nav className={classes.navBar}>
+                    <a className={classes.projects} href="#projects"> Past Work</a>
+                    <a className={classes.skills} href="#skills"> Skills</a>
                 </nav>
-                <a href="#contact">Hire me</a>
+                <a className={classes.contact} href="#contact">Hire me </a>
+                <span className={classes.arrow}><AiOutlineArrowRight/></span>
             </div>
         </header>
     )
