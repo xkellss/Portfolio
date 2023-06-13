@@ -1,14 +1,16 @@
 .projectContainer{
-    text-align: center;
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    align-items: center; /* Add this line to center the items horizontally */
+    justify-content: center; /* Add this line to center the items vertically */
+
 }
-.projectGrid{
+.projectGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-
+    gap: 50px; /* Set the gap between grid items */
+    justify-content: center; /* Center the grid horizontally */
+    padding-bottom: 6rem;
 }
 @media (max-width: 1100px) {
     .projectGrid {
@@ -16,19 +18,6 @@
     }
 }
 
-.projectItem{
-    position: relative;
-    /*border: 1px solid #ccc;*/
-    padding: 20px;
-    width: 90%;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-}
-.projectItem:hover{
-    background-color: rgba(0,0,0,0.1);
-
-}
 .projectText{
     font-size: 2rem;
     font-family: "Roboto", serif;
@@ -38,26 +27,37 @@
     color: #7AD7F0;
 }
 
+.projectItem{
+    position: relative;
+    /*border: 1px solid #ccc;*/
+    width: 520px;
+    height: 300px;
+    text-align: center;
+
+}
+.projectItem:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+
 .github{
     padding-right: .75rem;
     color: #7AD7F0;
-
+}
+.website{
+    padding-right: .75rem;
+    color: #fff;
 }
 .projectItem:hover .projectLinks {
     display: block;
 
 }
 
-.projectLinks {
-    display: none;
-    color: #7AD7F0;
-}
 .gif{
     width: 520px;
     height: 300px;
     border: 1px solid #ccc;
-    padding: 20px;
     transition: opacity 0.3s;
+
 }
 
 

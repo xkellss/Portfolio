@@ -16,7 +16,7 @@ const projects = [
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
         // image: "./project-2.gif",
-        image: "./cat.gif",
+        image: "./aldi.gif",
         link: "https://reactbootcamp.com",
     },
     {
@@ -32,7 +32,11 @@ const projects = [
         subtitle: "React Hooks",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-        image: "./cat.gif",
+        image: "./hello.gif",
+        table: "./table.png",
+        keys: "./keys-tables.png",
+        fd: "./fd.png",
+        erDiagram: "./errDiagram.png",
         link: "https://reactbootcamp.com",
     },
 ];export default projects;
