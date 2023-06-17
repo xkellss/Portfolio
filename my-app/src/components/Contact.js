@@ -23,9 +23,7 @@ function Contact(){
             .then(() => alert("Thank you for your submission"))
             .catch((error) => alert(error));
     }
-    document
-        .querySelector("form")
-        .addEventListener("submit", handleSubmit);
+
 
     return(
         <section id="contact">
