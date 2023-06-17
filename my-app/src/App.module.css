@@ -7,3 +7,19 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
+.underline {
+    position: relative;
+}
+
+.underline::after {
+    background-color: #ffffff;
+    opacity: 0.5;
+    content: "";
+    position: absolute;
+    bottom: .5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    margin-bottom: 1rem;
+}

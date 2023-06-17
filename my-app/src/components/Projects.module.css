@@ -1,20 +1,28 @@
 .projectContainer{
     display: flex;
     flex-direction: column;
-    align-items: center; /* Add this line to center the items horizontally */
-    justify-content: center; /* Add this line to center the items vertically */
-
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
 }
 .projectGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px; /* Set the gap between grid items */
-    justify-content: center; /* Center the grid horizontally */
+    gap: 50px;
+    justify-content: center;
     padding-bottom: 6rem;
+    padding-top: 1rem;
+
 }
 @media (max-width: 1100px) {
     .projectGrid {
         grid-template-columns: 1fr;
+    }
+    .projectSummary{
+        overflow: auto;
+    }
+    .projectTitle{
+        padding-top: 6rem;
     }
 }
 
@@ -22,49 +30,51 @@
     font-size: 2rem;
     font-family: "Roboto", serif;
 }
+.summary{
+    text-align: center;
+
+}
 .projectLogo{
     font-size: 3rem;
     color: #7AD7F0;
 }
-
-.projectItem{
-    position: relative;
-    /*border: 1px solid #ccc;*/
-    width: 520px;
-    height: 300px;
+.projectItem {
+    width: 100%;
+    max-width: 520px;
+    height: 100%;
     text-align: center;
-
+    position: relative;
 }
 .projectItem:hover{
     background-color: rgba(0,0,0,0.1);
 }
 
+
 .github{
     padding-right: .75rem;
     color: #7AD7F0;
+
 }
 .website{
     padding-right: .75rem;
     color: #fff;
 }
+
 .projectItem:hover .projectLinks {
     display: block;
-
+    padding-bottom: 20px;
 }
 
-.gif{
-    width: 520px;
-    height: 300px;
-    border: 1px solid #ccc;
+.gif {
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.3);
     transition: opacity 0.3s;
-
 }
-
-
 .projectSummary {
     position: absolute;
     top: 0;
-    left: 0;
+    left:0;
     width: 100%;
     height: 100%;
     display: none;
@@ -72,6 +82,12 @@
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.3);
     color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+.projectSummary p{
+    margin-bottom: 0;
 }
 
 .projectItem:hover .projectSummary {
@@ -84,4 +100,8 @@
 
 .projectItem:hover img {
     opacity: 0;
+}
+
+.databaseImages{
+    color:  #92DFF3;
 }

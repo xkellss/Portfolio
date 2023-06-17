@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 5%;
+    padding-bottom: 5rem;
 
 }
 .skillsGrid{
@@ -15,7 +15,11 @@
     width: 60%;
     justify-items: center;
 }
-
+@media (max-width: 600px) {
+    .skillsGrid {
+        grid-template-columns: 1fr;
+    }
+}
 .skillsItem{
     /*border: 1px solid #ccc;*/
     padding: 20px;
@@ -30,7 +34,9 @@
 }
 .skillsText{
     font-family: "Roboto", serif;
-
+}
+.summary{
+    text-align: center;
 }
 .itemsCheck{
     color: #7AD7F0;

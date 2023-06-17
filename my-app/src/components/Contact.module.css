@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.contactContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 5%;
+}
+.contactLogo{
+    font-size: 3rem;
+    color: #7AD7F0;
+}
+.contactText{
+    font-size: 2rem;
+    font-family: "Roboto", serif;
+}
+.summary{
+    margin-bottom: 2rem;
+}
+.summary a{
+    color: #92DFF3;
+}
+form{
+    margin: 0 auto;
+    max-width: 600px;
+}
+@media (max-width: 600px) {
+    .form {
+        padding-left: 1rem;
+        padding-right: 2rem;
+        /*padding: 0 1.5rem;*/
+    }
+}
+textarea{
+    height: 100px;
+    resize: none;
+}
+.contactInput{
+    margin-bottom: 2.5rem;
+}
+.contactInput label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+.contactInput input, .contactInput textarea{
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: .5rem;
+}
+button{
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    color: #fff;
+    padding: .5rem 2rem;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 6px;
+}
+button:hover{
+
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #92DFF3;
+}

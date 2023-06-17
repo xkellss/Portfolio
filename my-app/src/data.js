@@ -8,36 +8,43 @@ const projects = [
             " I had. I'm proud of this project (although its not the best) as it represent my early growth and the progress" +
             " I've made since then.",
         image: "./diamond.gif",
-        link: "https://angry-jang-f51caa.netlify.app/index.html",
+        link: "https://github.com/xkellss/OferDiamond",
+        website: "https://angry-jang-f51caa.netlify.app/index.html",
     },
     {
         title: "Aldi's PTO",
-        subtitle: "React and Python",
+        subtitle: "PUG, HTML/CSS,Mysql, Nodejs",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-        // image: "./project-2.gif",
+            "This project was undertaken to develop a Personal Time Off (PTO) tracker for Aldi, a company " +
+            "specializing in retail. Although the project remains incomplete, it provided me with valuable experience collaborating " +
+            "with a team to define accurate requirements, design the system, and progress towards its implementation. ",
         image: "./aldi.gif",
-        link: "https://reactbootcamp.com",
+        link: "https://github.com/xkellss/Aldi-Project",
     },
     {
         title: "Red-Hots Online Ordering",
-        subtitle: "React and Firebase",
+        subtitle: "React,HTML/CSS,.NET,JS",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+            "This project represented the final phase of my capstone class, where my team and I worked on implementing an online " +
+            "ordering system for a local restaurant. This project was a valuable milestone in my learning journey and " +
+            "further enhanced my proficiency in React and knowledge in component development.",
         image: "./hotdog.gif",
-        link: "https://reactbootcamp.com",
+        link: "https://github.com/asalerno01/RestaurantOrderOnline",
     },
     {
         title: "Database Project",
-        subtitle: "React Hooks",
+        subtitle: "MySQL, database",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-        image: "./hello.gif",
+            "My team worked on this project to design a doctor billing system. We created an ER/EER Model, " +
+            "tables, and implemented queries and triggers. Additionally, We developed a JDBC program for executing selected " +
+            "queries. It was a valuable hands-on experience in database design and application development which made this" +
+            " my favorite project!",
+        image: "./database.gif",
         table: "./table.png",
         keys: "./keys-tables.png",
         fd: "./fd.png",
         erDiagram: "./errDiagram.png",
-        link: "https://reactbootcamp.com",
+        assignment: "./Project.PNG"
     },
 ];export default projects;
 
