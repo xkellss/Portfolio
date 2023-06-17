@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+
 import projects from '../data.js';
 import classes from './Projects.module.css'
 

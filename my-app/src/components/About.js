@@ -1,17 +1,27 @@
 import classes from './About.module.css'
 import myImage from './portfolio.jpg';
+import Typewriter from 'typewriter-effect';
 function About(){
+
     return(
         <div id="about" className={classes.container}>
             <p className={classes.text}>
-           Hello, I'm <span className={classes.name}>Kels!</span>
+                <div className={classes.name}>
+                <Typewriter
+                options={{
+                    strings: ["Hello, I'm Kels!"],
+                    autoStart: true,
+                    loop: true,
+                }}
+            /></div>
             </p>
 
             <div className={classes.image}>
             <p className={classes.summary}>
                 I'm a recent graduate and future software developer! I'm a passionate programmer who is willing to
-                explore new skills/technologies. I'm ready to put in the work in order to grow and be the best I
-                can be!
+                explore new skills/technologies. I'm determined to put in the effort and dedication required to grow
+                and excel in my field. My goal is to continuously evolve and become the best version of myself
+                throughout this journey.
             </p>
                 <img className={classes.photo} src={myImage} alt=""/>
             </div>

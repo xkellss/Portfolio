@@ -20,22 +20,24 @@ function Contact(){
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams(formData).toString(),
         })
-            .then(() => alert("/thank-you/"))
+            .then(() => alert("Thank you for your submission"))
             .catch((error) => alert(error));
     }
-
+    document
+        .querySelector("form")
+        .addEventListener("submit", handleSubmit);
 
     return(
         <section id="contact">
             <div className={classes.contactContainer}>
                 <span className={classes.contactLogo}><IoIosContact/></span>
-                <form className={classes.form} action="/pages/success" onSubmit={handleSubmit} netlify>
+                <form name={"contact"} className={classes.form} action="/pages/success" onSubmit={handleSubmit} netlify>
                     <h2 className={classes.contactText} >Contact me!</h2>
                     <p className={classes.summary}> You can contact me by messaging me on <a href="https://www.linkedin.com/in/raquel-gonzalez-6b4a05219/" target="_blank" >Linkedin </a>
                         or filling out the form below :)</p>
                     <div className={classes.contactInput}>
                         <label htmlFor="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder={"Raquel Gonzalez"} value={name} onChange={(e => setName(e.target.value))}/>
+                        <input type="text" id="name" name="name" placeholder={"Raquel Gonzalez(Kels)"} value={name} onChange={(e => setName(e.target.value))}/>
                     </div>
                     <div className={classes.contactInput}>
                     <label htmlFor="email">E-mail</label>

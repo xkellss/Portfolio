@@ -11,7 +11,7 @@
     padding-left: 5%;
 }
 .name{
-    background: linear-gradient(to right,#7AD7F0,#92DFF3,#B7E9F7,#D8F3FA);
+    background: linear-gradient(to right,#7AD7F0,white);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
@@ -38,7 +38,7 @@
 .summary {
     font-size: 1.3rem;
     flex: 1;
-    padding-left: 10%;
+    padding-left: 8%;
     padding-right: 2%;
 }
 
