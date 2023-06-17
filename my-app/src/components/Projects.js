@@ -1,4 +1,3 @@
-
 import projects from '../data.js';
 import classes from './Projects.module.css'
 
