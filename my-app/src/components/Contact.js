@@ -29,7 +29,7 @@ function Contact(){
         <section id="contact">
             <div className={classes.contactContainer}>
                 <span className={classes.contactLogo}><IoIosContact/></span>
-                <form name={"contact"} className={classes.form} action="/pages/success" onSubmit={handleSubmit} data-netlify={"true"}>
+                <form name="contact" className={classes.form} onSubmit={handleSubmit} method={"POST"} netlify>
                     <input type="hidden" name={"form-name"} value={"contact"}/>
                     <h2 className={classes.contactText} >Contact me!</h2>
                     <p className={classes.summary}> You can contact me by messaging me on <a href="https://www.linkedin.com/in/raquel-gonzalez-6b4a05219/" target="_blank" >Linkedin </a>
