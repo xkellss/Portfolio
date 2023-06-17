@@ -10,27 +10,31 @@ function Contact(){
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
-    function handleSubmit(e){
-        e.preventDefault();
-        const myForm = e.target;
-        const formData = new FormData(myForm);
+    function encode(data) {
+        return Object.keys(data)
+            .map(
+                (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+            )
+            .join("&");
+    }
 
+    function handleSubmit(e) {
+        e.preventDefault();
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData).toString(),
+            body: encode({ "form-name": "contact", name, email, message }),
         })
-            .then(() => alert("Thank you for your submission"))
+            .then(() => alert("Message sent!"))
             .catch((error) => alert(error));
     }
-
 
     return(
         <section id="contact">
             <div className={classes.contactContainer}>
                 <span className={classes.contactLogo}><IoIosContact/></span>
                 <form name="contact" className={classes.form} onSubmit={handleSubmit} method={"POST"} netlify>
-                    <input type="hidden" name={"form-name"} value={"contact"}/>
+                    <input type="hidden" name={"form-name"} value="contact"/>
                     <h2 className={classes.contactText} >Contact me!</h2>
                     <p className={classes.summary}> You can contact me by messaging me on <a href="https://www.linkedin.com/in/raquel-gonzalez-6b4a05219/" target="_blank" >Linkedin </a>
                         or filling out the form below :)</p>
