@@ -29,45 +29,43 @@ function Contact(){
         <section id="contact">
             <div className={classes.contactContainer}>
                 <span className={classes.contactLogo}><IoIosContact/></span>
-                <form name="contact" className={classes.form} onSubmit={handleSubmit} method={"POST"} netlify>
-                    <input type="hidden" name={"form-name"} value="contact"/>
-                    <h2 className={classes.contactText} >Contact me!</h2>
-                    <p className={classes.summary}> You can contact me by messaging me on <a href="https://www.linkedin.com/in/raquel-gonzalez-6b4a05219/" target="_blank" >Linkedin </a>
-                        or filling out the form below :)</p>
-                    <div className={classes.contactInput}>
-                        <label htmlFor="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder={"Raquel Gonzalez(Kels)"} value={name} onChange={(e => setName(e.target.value))}/>
-                    </div>
-                    <div className={classes.contactInput}>
-                    <label htmlFor="email">E-mail</label>
-                        <input type="email" id="email" name="email" placeholder={"Raquel@gmail.com"} value={email} onChange={(e => setEmail(e.target.value))}/>
-                    </div>
-                    <div className={classes.contactInput}>
-                    <label htmlFor="message">Message</label>
-                        <textarea  name="message" id="message" placeholder={"I found your portfolio interesting and I would like to " +
-                        "schedule a call whenever you're available!"} value={message} onChange={(e => setMessage(e.target.value))}/>
-                    </div>
-                    <button type={"submit"}> Submit</button>
-                </form>
+                {/*<form name="contact" className={classes.form} onSubmit={handleSubmit} method={"POST"} netlify>*/}
+                {/*    <input type="hidden" name={"form-name"} value="contact"/>*/}
+                {/*    <h2 className={classes.contactText} >Contact me!</h2>*/}
+                {/*    <p className={classes.summary}> You can contact me by messaging me on <a href="https://www.linkedin.com/in/raquel-gonzalez-6b4a05219/" target="_blank" >Linkedin </a>*/}
+                {/*        or filling out the form below :)</p>*/}
+                {/*    <div className={classes.contactInput}>*/}
+                {/*        <label htmlFor="name">Name</label>*/}
+                {/*        <input type="text" id="name" name="name" placeholder={"Raquel Gonzalez(Kels)"} value={name} onChange={(e => setName(e.target.value))}/>*/}
+                {/*    </div>*/}
+                {/*    <div className={classes.contactInput}>*/}
+                {/*    <label htmlFor="email">E-mail</label>*/}
+                {/*        <input type="email" id="email" name="email" placeholder={"Raquel@gmail.com"} value={email} onChange={(e => setEmail(e.target.value))}/>*/}
+                {/*    </div>*/}
+                {/*    <div className={classes.contactInput}>*/}
+                {/*    <label htmlFor="message">Message</label>*/}
+                {/*        <textarea  name="message" id="message" placeholder={"I found your portfolio interesting and I would like to " +*/}
+                {/*        "schedule a call whenever you're available!"} value={message} onChange={(e => setMessage(e.target.value))}/>*/}
+                {/*    </div>*/}
+                {/*    <button type={"submit"}> Submit</button>*/}
+                {/*</form>*/}
 
-                <form name="contact" method="POST"onSubmit={handleSubmit}  netlify >
+                <form name="contact" method="post">
+                    <input type="hidden" name="form-name" value="contact" />
                     <p>
-                        <label>Your Name: <input type="text" name="name" /></label>
+                        <label htmlFor="name">Name</label> <br />
+                        <input type="text" id="name" name="name" required />
                     </p>
                     <p>
-                        <label>Your Email: <input type="email" name="email" /></label>
+                        <label htmlFor="email">Email</label> <br />
+                        <input type="email" id="email" name="email" required />
                     </p>
                     <p>
-                        <label>Your Role: <select name="role[]" multiple>
-                            <option value="leader">Leader</option>
-                            <option value="follower">Follower</option>
-                        </select></label>
+                        <label htmlFor="message">Message</label> <br />
+                        <textarea id="message" name="message" required></textarea>
                     </p>
                     <p>
-                        <label>Message: <textarea name="message"></textarea></label>
-                    </p>
-                    <p>
-                        <button type="submit">Send</button>
+                        <input type="submit" value="Submit message" />
                     </p>
                 </form>
 
