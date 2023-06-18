@@ -50,23 +50,27 @@ function Contact(){
                 {/*    <button type={"submit"}> Submit</button>*/}
                 {/*</form>*/}
 
-                <form name="contact" method="post">
-                    <input type="hidden" name="form-name" value="contact" />
-                    <p>
-                        <label htmlFor="name">Name</label> <br />
-                        <input type="text" id="name" name="name" required />
-                    </p>
-                    <p>
-                        <label htmlFor="email">Email</label> <br />
-                        <input type="email" id="email" name="email" required />
-                    </p>
-                    <p>
-                        <label htmlFor="message">Message</label> <br />
-                        <textarea id="message" name="message" required></textarea>
-                    </p>
-                    <p>
-                        <input type="submit" value="Submit message" />
-                    </p>
+                <form
+                    method='POST'
+                    name='contactform'
+                    className='contactForm'>
+
+                    <input
+                        type='hidden'
+                        name='form-name'
+                        value='contactForm' />
+
+                    <input
+                        type='text'
+                        name='name'
+                        placeholder='Enter your name' />
+
+                    <input
+                        type='email'
+                        name='email'
+                        placeholder='Enter your email' />
+
+                    <button type='submit'>Submit</button>
                 </form>
 
             </div>
