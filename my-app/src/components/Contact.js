@@ -29,48 +29,25 @@ function Contact(){
         <section id="contact">
             <div className={classes.contactContainer}>
                 <span className={classes.contactLogo}><IoIosContact/></span>
-                {/*<form name="contact" className={classes.form} onSubmit={handleSubmit} method={"POST"} netlify>*/}
-                {/*    <input type="hidden" name={"form-name"} value="contact"/>*/}
-                {/*    <h2 className={classes.contactText} >Contact me!</h2>*/}
-                {/*    <p className={classes.summary}> You can contact me by messaging me on <a href="https://www.linkedin.com/in/raquel-gonzalez-6b4a05219/" target="_blank" >Linkedin </a>*/}
-                {/*        or filling out the form below :)</p>*/}
-                {/*    <div className={classes.contactInput}>*/}
-                {/*        <label htmlFor="name">Name</label>*/}
-                {/*        <input type="text" id="name" name="name" placeholder={"Raquel Gonzalez(Kels)"} value={name} onChange={(e => setName(e.target.value))}/>*/}
-                {/*    </div>*/}
-                {/*    <div className={classes.contactInput}>*/}
-                {/*    <label htmlFor="email">E-mail</label>*/}
-                {/*        <input type="email" id="email" name="email" placeholder={"Raquel@gmail.com"} value={email} onChange={(e => setEmail(e.target.value))}/>*/}
-                {/*    </div>*/}
-                {/*    <div className={classes.contactInput}>*/}
-                {/*    <label htmlFor="message">Message</label>*/}
-                {/*        <textarea  name="message" id="message" placeholder={"I found your portfolio interesting and I would like to " +*/}
-                {/*        "schedule a call whenever you're available!"} value={message} onChange={(e => setMessage(e.target.value))}/>*/}
-                {/*    </div>*/}
-                {/*    <button type={"submit"}> Submit</button>*/}
-                {/*</form>*/}
-
-                <form
-                    method='POST'
-                    name='contactform'
-                    className='contactForm'>
-
-                    <input
-                        type='hidden'
-                        name='form-name'
-                        value='contactForm' />
-
-                    <input
-                        type='text'
-                        name='name'
-                        placeholder='Enter your name' />
-
-                    <input
-                        type='email'
-                        name='email'
-                        placeholder='Enter your email' />
-
-                    <button type='submit'>Submit</button>
+                <form name="contact" className={classes.form} onSubmit={handleSubmit} method={"POST"} netlify>
+                    <input type="hidden" name={"form-name"} value="contact"/>
+                    <h2 className={classes.contactText} >Contact me!</h2>
+                    <p className={classes.summary}> You can contact me by messaging me on <a href="https://www.linkedin.com/in/raquel-gonzalez-6b4a05219/" target="_blank" >Linkedin </a>
+                        or filling out the form below :)</p>
+                    <div className={classes.contactInput}>
+                        <label htmlFor="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder={"Raquel Gonzalez(Kels)"} value={name} onChange={(e => setName(e.target.value))}/>
+                    </div>
+                    <div className={classes.contactInput}>
+                    <label htmlFor="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder={"Raquel@gmail.com"} value={email} onChange={(e => setEmail(e.target.value))}/>
+                    </div>
+                    <div className={classes.contactInput}>
+                    <label htmlFor="message">Message</label>
+                        <textarea  name="message" id="message" placeholder={"I found your portfolio interesting and I would like to " +
+                        "schedule a call whenever you're available!"} value={message} onChange={(e => setMessage(e.target.value))}/>
+                    </div>
+                    <button type={"submit"}> Submit</button>
                 </form>
 
             </div>
