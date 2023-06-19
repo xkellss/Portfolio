@@ -14,17 +14,16 @@
   <title>React App</title>
 </head>
 <body>
-<noscript>You need to enable JavaScript to run this app.</noscript>
-<div id="root"></div>
+<form name="contactForm"netlify hidden>
 
-<!-- Netlify form handling -->
-<form name="contact"netlify hidden>
-  <input type="hidden" name="form-name" value="contact" />
   <input type="text" name="name"  />
   <input type="email" name="email" />
   <textarea name="message" ></textarea>
-  <button type=submit> Submit</button>
+
 </form>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+
 
 <!-- Your JavaScript files or other scripts -->
 <script src="./src/components/Contact.js"></script>
