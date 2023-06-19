@@ -35,7 +35,8 @@ function Contact(){
                     name={"contactForm"}
                     data-netlify={"true"}
                     className={classes.form}
-                    onSubmit={handleSubmit} >
+                    // onSubmit={handleSubmit}
+                >
                     <input type="hidden" name="form-name" value="contactForm" />
                     <h2 className={classes.contactText} >Contact me!</h2>
                     <p className={classes.summary}> You can contact me by messaging me on <a href="https://www.linkedin.com/in/raquel-gonzalez-6b4a05219/" target="_blank" >Linkedin </a>
