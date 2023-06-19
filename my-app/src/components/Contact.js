@@ -10,17 +10,21 @@ function Contact(){
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
-    function handleSubmit(e){
+    function handleSubmit(e) {
         e.preventDefault();
         const myForm = e.target;
         const formData = new FormData(myForm);
 
         fetch("/", {
             method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            headers: {"Content-Type": "application/x-www-form-urlencoded"},
             body: new URLSearchParams(formData).toString(),
         })
-            .then(() => alert("Thank you for your submission"))
+            .then(() =>{
+
+             alert("Thank you for your submission");
+        myForm.reset();
+    })
             .catch((error) => alert(error));
     }
     document
