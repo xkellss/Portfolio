@@ -14,7 +14,10 @@
   <title>React App</title>
 </head>
 <body>
-<form name="contactForm"netlify hidden>
+<form name="contactForm" netlify hidden data-netlify-honeypot="bot-field">
+  <div hidden >
+    <input name="bot-field"/>
+  </div>
   <input type="text" name="name"  />
   <input type="email" name="email" />
   <textarea name="message" ></textarea>
