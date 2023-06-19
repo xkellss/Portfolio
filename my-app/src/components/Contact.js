@@ -10,6 +10,7 @@ function Contact(){
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
+    //For custom thank you page
     // function handleSubmit(e){
     //     e.preventDefault();
     //     const myForm = e.target;
@@ -23,9 +24,6 @@ function Contact(){
     //         .then(() => alert("Thank you for your submission"))
     //         .catch((error) => alert(error));
     // }
-    // document
-    //     .querySelector("form")
-    //     .addEventListener("submit", handleSubmit);
 
     return(
         <section id="contact">

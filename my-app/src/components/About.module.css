@@ -24,10 +24,10 @@
 
 .image img {
     border-radius: 50%;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
 }
-@media (max-width: 968px) {
+@media (max-width: 1000px) {
     .image img, img {
         width: 200px;
         height: 200px;
