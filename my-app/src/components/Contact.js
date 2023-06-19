@@ -46,7 +46,7 @@ function Contact(){
                         <textarea  name="message" id="message" placeholder={"I found your portfolio interesting and I would like to " +
                         "schedule a call whenever you're available!"} value={message} onChange={(e => setMessage(e.target.value))}/>
                     </div>
-                    <button type={"submit"}> Submit</button>
+                    {/*<button type={"submit"}> Submit</button>*/}
                 </form>
 
             </div>
