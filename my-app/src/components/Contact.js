@@ -34,9 +34,13 @@ function Contact(){
                     data-netlify={"true"}
                     className={classes.form}
                     method='POST'
+                    data-netlify-honeypot={"bot-field"}
                     // onSubmit={handleSubmit}
                 >
                     <input type="hidden" name="form-name" value="contactForm" />
+                    <div hidden >
+                        <input name="bot-field"/>
+                    </div>
                     <h2 className={classes.contactText} >Contact me!</h2>
                     <p className={classes.summary}> You can contact me by messaging me on <a href="https://www.linkedin.com/in/raquel-gonzalez-6b4a05219/" target="_blank" >Linkedin </a>
                         or filling out the form below :)</p>
