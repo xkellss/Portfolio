@@ -18,14 +18,20 @@
 <div id="root"></div>
 
 <!-- Netlify form handling -->
-<form name="contact" netlify hidden>
+<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
   <input type="hidden" name="form-name" value="contact" />
+  <div hidden>
+    <label>
+      Don't fill this out: <input name="bot-field" />
+    </label>
+  </div>
   <input type="text" name="name" />
   <input type="email" name="email" />
   <textarea name="message"></textarea>
+  <button type="submit">Submit</button>
 </form>
 
 <!-- Your JavaScript files or other scripts -->
-<script src="./src/components/Contact.js"></script>
+<script src="./src/index.js"></script>
 </body>
 </html>
