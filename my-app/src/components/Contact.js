@@ -15,7 +15,7 @@ function Contact(){
         const myForm = e.target;
         const formData = new FormData(myForm);
 
-        fetch("/", {
+        fetch("/thank-you.html", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams(formData).toString(),
