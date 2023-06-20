@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Nav.module.css'
 import {AiOutlineArrowRight} from 'react-icons/ai'
-
+import myImage from './Resume.PNG';
 function Nav(){
     return(
         <header className={classes.navHeader}>
@@ -12,6 +12,7 @@ function Nav(){
                 <nav className={classes.navBar}>
                     <a className={classes.projects} href="#projects"> Past Work</a>
                     <a className={classes.skills} href="#skills"> Skills</a>
+                    <a className={classes.skills} target="_blank" href={myImage}> <b> Resume</b></a>
                 </nav>
                 <a className={classes.contact} href="#contact">Hire me </a>
                 <span className={classes.arrow}><AiOutlineArrowRight/></span>
