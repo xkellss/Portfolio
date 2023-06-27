@@ -43,11 +43,11 @@ function Contact(){
                         or filling out the form below :)</p>
                     <div className={classes.contactInput}>
                         <label htmlFor="name">Name</label>
-                        <input type="text"  name="name" placeholder={"Raquel Gonzalez(Kels)"} value={name} onChange={(e => setName(e.target.value))}/>
+                        <input type="text"  name="name" placeholder={"Raquel Gonzalez"} value={name} onChange={(e => setName(e.target.value))}/>
                     </div>
                     <div className={classes.contactInput}>
                     <label htmlFor="email">E-mail</label>
-                        <input type="email" id="email" name="email" placeholder={"Raquel@gmail.com"} value={email} onChange={(e => setEmail(e.target.value))}/>
+                        <input type="email" id="email" name="email" placeholder={"graquel61@yahoo.com"} value={email} onChange={(e => setEmail(e.target.value))}/>
                     </div>
                     <div className={classes.contactInput}>
                     <label htmlFor="message">Message</label>
