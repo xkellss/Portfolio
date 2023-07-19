@@ -37,15 +37,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/my-app/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/my-app/src/components" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Kels\Documents\Projects Portfolio\Portfolio\my-app\public" />
       <recent name="C:\Users\Kels\Documents\Projects Portfolio\Portfolio\my-app\src\components" />
+      <recent name="C:\Users\Kels\Documents\Projects Portfolio\Portfolio\my-app\public" />
       <recent name="C:\Users\Kels\Documents\Projects Portfolio\Portfolio\my-app\public\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">

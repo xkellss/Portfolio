@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Nav.module.css'
 import {AiOutlineArrowRight} from 'react-icons/ai'
-import myImage from './Resume.PNG';
+import myImage from './Resume.pdf';
 function Nav(){
     return(
         <header className={classes.navHeader}>
